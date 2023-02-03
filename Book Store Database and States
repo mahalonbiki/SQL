@@ -1,0 +1,18 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, color TEXT, sale TEXT, price NUMERIC);
+INSERT INTO store VALUES (1, "pens", "black", "no", 1);
+INSERT INTO store VALUES (2, "pencils", "yellow", "no", .50);
+INSERT INTO store VALUES (3, "sticky notes", "mulit", "yes", 3);
+INSERT INTO store VALUES (4, "paper", "white", "yes", 6);
+INSERT INTO store VALUES (5, "ruler", "clear", "no", 3);
+INSERT INTO store VALUES (6, "eraser", "pink", "yes", .50);
+INSERT INTO store VALUES (7, "gum", "green", "no", 2.50);
+INSERT INTO store VALUES (8, "calendar", "blue", "yes", 14);
+INSERT INTO store VALUES (9, "markers","multi", "no", 26);
+INSERT INTO store VALUES (10, "highlighters", "multi", "no", 13);
+INSERT INTO store VALUES (11, "desk","white","yes", 125);
+INSERT INTO store VALUES (12, "chair", "black", "yes", 75);
+INSERT INTO store VALUES (13, "chalk", "white", "no", 8);
+INSERT INTO store VALUES (14, "lamp", "orange","no", 13);
+INSERT INTO store VALUES (15, "paperclips", "silver", "no", 3);
+Select * From store ORDER BY sale;
+Select price, sum (price)FROM store WHERE price > 6;
